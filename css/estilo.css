@@ -459,17 +459,17 @@ a:visited {
 }
 
 .contacto button{
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #fff;
-  width: fit-content;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 22px;
-  font-size: 16px;
-  color: #fff;
-  position: relative;
-  z-index: 10;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 .contacto button .overlay{
@@ -547,6 +547,7 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -598,10 +599,18 @@ footer .arriba{
     .portfolio .galeria .proyecto img{
         width: 100%;
     }
+    .contacto{
+        padding-top: 50px 0;
+        padding: 400px 0;
+    }
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
         width: 100%;
     }
+    .info{
+        margin-top: 175px;
+    }
+    
 }
