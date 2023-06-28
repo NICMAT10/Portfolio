@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/estilo.css">
   </head>
@@ -53,9 +56,12 @@
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
         <h2>Sobre Mí</h2>
-        <p><span>Hola, soy Nicolas Matias Maraz.</span>Estudiante Tecnicatura Universitaria en Programación, actualmente soy freelancer
-          dedicado a la realización de proyectos en el campo del Desarrollo Web- Fron End.
-          Estoy enfocado en expandir mis conocimientos en programación y explorar nuevas
+        <p><span>Hola, soy Nicolas Matias Maraz.</span>Estudiante Tecnicatura
+          Universitaria en Programación, actualmente soy freelancer
+          dedicado a la realización de proyectos en el campo del Desarrollo Web-
+          Fron End.
+          Estoy enfocado en expandir mis conocimientos en programación y
+          explorar nuevas
           oportunidades en el mercado laboral.</p>
 
         <div class="fila">
@@ -228,84 +234,102 @@
         </div>
       </div>
     </section>
-      <!-- SECCION PORTFOLIO -->
-      <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-          <h2>PORTFOLIO</h2>
-          <div class="galeria">
-            <div class="proyecto">
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <a href="https://home-gym-boutique.netlify.app/">
               <img src="img/g1.jpg" alt>
               <div class="overlay">
-                <h3>Imagen Ilustrativa</h3>
-                <p>Fotografía</p>
+                <h3>Proyecto Home Gym</h3>
+                <p>pagina de muestra</p>
               </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <img src="img/g2.jpg" alt="imagen ilustrativa">
+            <div class="overlay">
+              <h3>Proyecto Punto de Venta</h3>
+              <p>En proceso</p>
             </div>
-            <div class="proyecto">
-              <img src="img/g2.jpg" alt>
+          </div>
+          <div class="proyecto">
+            <a href="https://proyecto-calculadora-epe.netlify.app/">
+              <img src="img/epe.jpg" alt="imagen ilustrativa">
               <div class="overlay">
-                <h3>Imagen Ilustrativa</h3>
-                <p>Fotografía</p>
+                <h3>Calculadora Epe</h3>
+                <p>proyecto de prueba</p>
               </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <form class="col" id="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="number" name="phone" placeholder="Número telefónico"
+              required>
+            <input type="email" name="email" placeholder="Dirección de correo"
+              required>
+            <input type="text" name="tema" placeholder="Tema" required>
+            <textarea name="message" id="textarea" cols="30" rows="10"
+              placeholder="Mensaje" required></textarea>
+            <button type="submit" id="button" value="Enviar Mensaje">Enviar <i
+                class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
+          <!-- Mapa -->
+          <div class="col">
+            <img src alt>
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Santa Fe - Rosario
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Contactame: 341-3069684
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: matiasnico932@gmail.com
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- SECCION CONTACTO -->
-      <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-          <h2>CONTACTO</h2>
-          <div class="fila">
-            <!-- Formulario -->
-            <form  class="col" id="contact-form">
-              <input type="text" name="name" placeholder="Tu Nombre" required>
-              <input type="number" name="phone" placeholder="Número telefónico" required>
-              <input type="email" name="email" placeholder="Dirección de correo" required>
-              <input type="text" name="tema" placeholder="Tema" required>
-              <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-              <button type="submit" id="button" value="Enviar Mensaje">Enviar <i class="fa-solid fa-paper-plane"></i>
-                <span class="overlay"></span> 
-              </button>
-            </form>
-            <!-- Mapa -->
-            <div class="col">
-              <img src alt>
-              <div class="info">
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Santa Fe - Rosario
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    Contactame: 341-3069684
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    Email: matiasnico932@gmail.com
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <span>Nicolas Matias Desarrollador</span>
+      <div class="redes">
+        <a href="https://www.facebook.com/nicolasmatias.maraz"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://github.com/NICMAT10"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matias-maraz-745580255/"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </footer>
 
-      <!-- footer -->
-      <footer>
-        <a href="#inicio" class="arriba">
-          <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <span>Nicolas Matias Desarrollador</span>
-        <div class="redes">
-          <a href="https://www.facebook.com/nicolasmatias.maraz"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://github.com/NICMAT10"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/matias-maraz-745580255/"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-      </footer>
-
-      <script src="/script.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-            <script type="text/javascript"> emailjs.init('lR0Ea2k45JfcAwC4R')</script>
-    </body>
-  </html>
+    <script src="/script.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('lR0Ea2k45JfcAwC4R')</script>
+  </body>
+</html>
