@@ -81,8 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Aquí puedes realizar validaciones adicionales si es necesario
 
     // Enviar los datos a través de EmailJS
-    const serviceID = "default_service";
-    const templateID = "template_3lnne9j";
+
     const templateParams = {
       name: name,
       phone: phone,
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
       message: message
     };
 
-    emailjs.send(serviceID, templateID, templateParams)
+    emailjs.send("service_dbz13i4", "template_l55w8x7", templateParams)
       .then(function(response) {
         btn.value = "Enviar Mensaje";
         btn.disabled = false;
