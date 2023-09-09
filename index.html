@@ -284,7 +284,7 @@
         <h2>CONTACTO</h2>
         <div class="fila">
           <!-- Formulario -->
-          <form class="col" id="contact-form">
+          <!--<form class="col" id="contact-form">
             <input type="text" name="name" placeholder="Tu Nombre" required>
             <input type="number" name="phone" placeholder="Número telefónico"
               required>
@@ -297,7 +297,20 @@
                 class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
+          </form>-->
+          <form class="col" id="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="number" name="phone" placeholder="Número telefónico" required>
+            <input type="email" name="email" placeholder="Dirección de correo" required>
+            <input type="text" name="tema" placeholder="Tema" required>
+            <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <button type="submit" id="button" value="Enviar Mensaje">Enviar <i class="fa-solid fa-paper-plane"></i><span class="overlay"></span></button>
           </form>
+          <div id="message-box" class="hidden">
+            <div id="message-content"></div>
+            <button id="close-message">Cerrar</button>
+          </div>
+          
           <!-- Mapa -->
           <div class="col">
             <img src alt>
@@ -329,10 +342,10 @@
       </a>
       <span>Nicolas Matias Desarrollador</span>
       <div class="redes">
-        <a href="https://www.facebook.com/nicolasmatias.maraz"><i
+        <a href="https://www.facebook.com/nicolasmatias.maraz" target="_blank"><i
             class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://github.com/NICMAT10"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/matias-maraz-1943a1284/"><i
+        <a href="https://github.com/NICMAT10" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matias-maraz-1943a1284/" target="_blank"><i
             class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </footer>

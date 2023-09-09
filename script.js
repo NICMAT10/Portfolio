@@ -62,7 +62,7 @@ function descargarArchivo() {
   document.body.removeChild(link);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("contact-form");
   const btn = document.getElementById("button");
 
@@ -102,5 +102,56 @@ document.addEventListener("DOMContentLoaded", function() {
         btn.disabled = false;
         alert("Error al enviar el mensaje: " + error);
       });
+  });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const btn = document.getElementById("button");
+  const messageBox = document.getElementById("message-box");
+  const messageContent = document.getElementById("message-content");
+  const closeMessage = document.getElementById("close-message");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Enviando...";
+    btn.disabled = true;
+
+    const name = document.getElementsByName("name")[0].value;
+    const phone = document.getElementsByName("phone")[0].value;
+    const email = document.getElementsByName("email")[0].value;
+    const tema = document.getElementsByName("tema")[0].value;
+    const message = document.getElementById("textarea").value;
+
+    const templateParams = {
+      name: name,
+      phone: phone,
+      email: email,
+      tema: tema,
+      message: message,
+    };
+
+    // Reemplaza 'YOUR_SERVICE_ID' y 'YOUR_TEMPLATE_ID' con tus propios valores de EmailJS
+    emailjs.send("service_dbz13i4", "template_l55w8x7", templateParams)
+      .then(function (response) {
+        btn.value = "Enviar Mensaje";
+        btn.disabled = false;
+        messageContent.textContent = "Mensaje Enviado Correctamente";
+        messageBox.style.backgroundColor = "#7cda9d"; // Cambia el color de fondo
+        messageBox.style.display = "block";
+        form.reset();
+      })
+      .catch(function (error) {
+        btn.value = "Enviar Mensaje";
+        btn.disabled = false;
+        messageContent.textContent = "Error al enviar el mensaje: " + error;
+        messageBox.style.backgroundColor = "#a12041"; // Cambia el color de fondo
+        messageBox.style.display = "block";
+      });
+  });
+
+  closeMessage.addEventListener("click", function () {
+    messageBox.style.display = "none";
   });
 });
